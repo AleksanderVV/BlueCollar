@@ -1,9 +1,116 @@
 //====================================================================================================
 
+.header-social {
+  background-color: $greyColor;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 0;
+  }
+  &__icons {
+    display: flex;
+    gap: 20px;
+  }
+}
+.header-contacts {
+  background-color: $whiteColor;
+  padding: 40px 0px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    width: 242px;
+  }
+  &__content {
+    display: flex;
+    gap: 65px;
+  }
+  &__item {
+    display: flex;
+    gap: 15px;
+  }
+  &__icon {
+    position: relative;
+    height: 68px;
+    width: 68px;
+    border-radius: 50%;
+    background-color: $orangeColor;
+    img {
+      position: absolute;
+      top: 21px;
+      left: 21px;
+    }
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    font-family: "Mulish", sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    color: $mainColor;
+  }
+  &__content {
+    color: $greyText;
+  }
+}
+.header-nav__container {
+  margin-bottom: -50px;
+  z-index: 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px 10px 20px;
+  background-color: $orangeColor;
+}
+.menu {
+  max-width: 645px;
+  width: 100%;
+  line-height: 56px;
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    font-size: 19px;
+  }
+  &__button {
+    padding: 19px 42px;
+    background-color: $mainColor;
+    color: $greyColor;
+  }
+  &__link {
+    transition: all 0.3s ease;
+    &:hover{
+      color: $whiteColor;
+    }
+  }
+}
+
+  .header-main {
+    background: no-repeat center / cover url("@img/header-main-image.jpg");
+    height: 813px;
+    &__container {
+
+      .header-main__description {
+        img {
+        }
+      }
+      h1 {
+      }
+      .view-services {
+        &:hover {}
+        &:active {}
+        &:focus {}
+      }
+    }
+  }
+
 //====================================================================================================
 
 //Burger
-/*
+
 .icon-menu {
 	display: none;
 	@media (max-width: $mobile) {
@@ -51,4 +158,4 @@
 		}
 	}
 }
-*/
+

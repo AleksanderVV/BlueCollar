@@ -18,7 +18,7 @@ flsFunctions.isWebp();
 // flsFunctions.addLoadedClass();
 
 // ===========  Burger Menu  =========== 
-// flsFunctions.menuInit();
+flsFunctions.menuInit();
 
 /* Accounting for a float bar on mobile devices when 100vh */
 // flsFunctions.fullVHfix();
