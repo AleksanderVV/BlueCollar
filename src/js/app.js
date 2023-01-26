@@ -49,7 +49,7 @@ Popups
 Documentation: https://template.fls.guru/template-docs/funkcional-popup.html
 Snippet (HTML): pl
 */
-// import './libs/popup.js'
+import './libs/popup.js'
 
 /*
 Parallax mouse

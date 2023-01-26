@@ -1,3 +1,153 @@
 //====================================================================================================
 
+  .footer {
+    background-color: $mainColor;
+    color: $whiteColor;
+    padding-top: 60px;
+    padding-bottom: 90px;
+    &__container {
+      .footer-contacts {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 28px;
+        border-bottom: 1px solid #4B557D;
+        &__logo {
+          a {
+            img {
+            }
+            &:hover {}
+            &:active {}
+            &:focus {}
+          }
+        }
+        &__content {
+          display: flex;
+          gap: 16px;
+          width: 100%;
+          a {
+            transition: all 0.3s ease 0s;
+            &:hover {
+              color: $greyText;
+            }
+          }
+        }
+        &__item {
+          display: flex;
+          gap: 10px;
+          max-width: 288px;
+          width: 100%;
+          align-items: center;
+        }
+        &__icon {
+          position: relative;
+          background-color: $orangeColor;
+          height: 68px;
+          width: 68px;
+          border-radius: 50%;
+          img {
+            position: absolute;
+            top: 21px;
+            left: 21px;
+          }
+          img.nav-point {
+            position: absolute;
+            top: 17px;
+            left: 23px;
+          }
+        }
+        &__text {
+          line-height: 26px;
+          }
+        &__title {
+          font-family: 'Mulish';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          }
+        &__content {
+          }
+      }
+      .footer__main {
+        display: flex;
+        justify-content: space-between;
+        gap: 130px;
+        padding-top: 40px;
+        padding-bottom: 2px;
+        border-bottom: 1px solid #4B557D;
+        .footer__social {
+          position: relative;
+          max-width: 385px;
+          .footer__nav {
+          }
+          .footer__description {
+            margin-top: 70px;
+            margin-bottom: 52px;
+          }
+        }
+        .footer__social::after {
+          content: "";
+          position: absolute;
+          top: 80px;
+          right: -50px;
+          width: 1px;
+          height: 223px;
+          background-color: #4B557D;
+        }
+        .footer__icons {
+          display: flex;
+          gap: 15px;
+          .icon {
+            position: relative;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-color: #2C3765;
+            img {
+              position: absolute;
+              top:20px;
+              left: 20px;
+            }
+          }
+        }
+        .footer__nav {
+          max-width: 755px;
+          width: 100%;
+          nav {
+            display: flex;
+            justify-content: space-between;
+            line-height: 27px;
+            ul {
+              position: relative;
+              font-size: 20px;
+              color: $orangeColor;
+            }
+            .quick-links::after {
+              content: "";
+              position: absolute;
+              top: 80px;
+              right: -100px;
+              width: 1px;
+              height: 223px;
+              background-color: #4B557D;
+            }
+            li {
+              font-size: 17px;
+              color: $whiteColor;
+              margin-bottom: 10px;
+              a {
+                transition: all 0.3s ease 0s;
+              }
+              a:hover {
+                color: $orangeColor;
+              }
+            }
+            li:first-child {
+              margin-top: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
 //====================================================================================================
