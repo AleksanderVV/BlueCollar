@@ -55,6 +55,8 @@ $responsiveType: 1;
 @import "base/null";
 
 body {
+  letter-spacing: 0.36px;
+  line-height: 27px;
 	// Scroll blocked
 	.lock & {
 		overflow: hidden;
