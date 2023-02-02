@@ -321,11 +321,247 @@
 //====================================================================================================
 
 
-//====================================================================================================
 
 
 //====================================================================================================
 
+.price {
+  background-color: $greyColor;
+  padding-top: 140px;
+  padding-bottom: 130px;
+  &__container {
+  }
+
+  &__main {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 58px;
+    .block__subtitle {
+      background-color: $whiteColor;
+    }
+    .block__main {
+      display: flex;
+      gap: 95px;
+      .block__title {
+        flex: 1 0 43%;
+      }
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__card {
+    background-color: $whiteColor;
+    padding: 40px 40px 50px 40px;
+  }
+
+  &__advantages {
+    display: flex;
+    gap: 65px;
+  }
+
+  &__advantage {
+    padding-left: 47px;
+  }
+
+  &__advantage-title {
+    position: relative;
+    font-family: 'Mulish';
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 9px;
+    &::before {
+      position: absolute;
+      content: '';
+      background: url("../img/icons/check.svg") no-repeat center;
+      height: 32px;
+      width: 32px;
+      border-radius: 50%;
+      top: 0px;
+      left: -45px;
+      background-color: #FFB342;
+    }
+  }
+
+  &__advantage-text {
+    color: $greyText;
+  }
+}
+
+.card-price {
+  margin-bottom: 62px;
+  &__offer {
+    display: flex;
+    gap: 43px;
+    padding-bottom: 38px;
+    margin-bottom: 29px;
+    border-bottom: 1px solid $greyColor;
+  }
+
+  &__plan {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 7px;
+  }
+
+  &__summ {
+    font-family: 'Mulish';
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 24px;
+    color: $greyText;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__popular {
+    text-transform: uppercase;
+    color: $mainColor;
+    background-color: $orangeColor;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+    width: 98px;
+    text-align: center;
+  }
+
+  &__list {
+    color: $greyText;
+    margin-bottom: 55px;
+  }
+
+  &__list-item {
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 31px;
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url('@img/icons/check-in-circle.svg');
+      height: 19px;
+      width: 19px;
+      top: 4px;
+      left: -31px;
+    }
+  }
+
+  &__button {
+    background-color: $orangeColor;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    a {
+      padding: 19px 106px;
+      display: block;
+    }
+    &:hover {
+      background: rgba(208, 153, 13);
+    }
+  }
+}
+
+
+//====================================================================================================
+
+.stay-updated {
+  padding-top: 150px;
+  padding-bottom: 80px;
+  &__container {
+  }
+
+  &__main {
+    text-align: center;
+  }
+  .block__title {
+    margin-bottom: 40px;
+  }
+}
+
+.news-cards {
+  display: flex;
+  gap: 40px;
+  &_card {
+  }
+}
+.news-card {
+  text-align: left;
+  
+  &__image {
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  &__image-title {
+    position: absolute;
+    display: flex;
+    font-size: 15px;
+    line-height: 22px;
+    background-color: $orangeColor;
+    width: 62%;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  &__image-name {
+    background-color: #FFC368;
+    width: 180px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 19px;
+    img {
+      margin-right: 5px;
+    }
+  }
+
+  &__image-date {
+    width: 180px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 19px;
+    z-index: 1;
+  }
+
+  &__title {
+    font-family: 'Mulish';
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    color: $greyText;
+    margin-bottom: 17px;
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 30px;
+    &::after {
+      position: absolute;
+      content: url('@img/icons/arrow-right.svg');
+      top: 0;
+      right: 0px;
+    }
+  }
+  a {
+    display: inline-block;
+    width: 130px;
+  }
+}
 
 
 //====================================================================================================
