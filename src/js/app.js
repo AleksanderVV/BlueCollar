@@ -35,7 +35,7 @@ Tabs
 Documentation: https://template.fls.guru/template-docs/modul-taby.html
 Snippet (HTML): tabs
 */
-// flsFunctions.tabs();
+flsFunctions.tabs();
 
 /*
 "Show more"
@@ -63,11 +63,11 @@ import * as flsForms from "./files/forms/forms.js";
 
 /* Form fields */
 /* Documentation: https://template.fls.guru/template-docs/rabota-s-formami.html */
-// flsForms.formFieldsInit({ viewPass: false });
+flsForms.formFieldsInit({ viewPass: false });
 
 /* Send forms */
 /* Documentation: https://template.fls.guru/template-docs/rabota-s-formami.html */
-// flsForms.formSubmit();
+flsForms.formSubmit();
 
 /* Form modules "quantity" */
 // flsForms.formQuantity();

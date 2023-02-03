@@ -49,7 +49,80 @@
               <div class="block__description">
                 We have extensive experience of domestic and business electrical installations and no job is too small. Our customers value our professionalism, work ethic and our competitive prices.
               </div>
-              <div class="block__main"></div>
+              <div class="block__main">
+                <div data-tabs class="tabs">
+                  <nav data-tabs-titles class="tabs__navigation">
+                    <button type="submit" class="tabs__title tabs__title_commercial _tab-active">Commercial</button>
+                    <button type="submit" class="tabs__title tabs__title_residential">Residential</button>
+                    <button type="submit" class="tabs__title tabs__title_industrial">Industrial</button>
+                  </nav>
+                  <div data-tabs-body class="tabs__content">
+                    <div class="tabs__body">
+                      <div class="tabs__main">
+                        <div class="block">
+                          <div class="block__subtitle">
+                            <img src="@img/icons/town-orange.svg" alt="Icon">
+                            Electrical installation
+                          </div>
+                          <div class="block__title">Commercial</div>
+                          <div class="block__description">
+                            <p>Electrical & Maintenance Services Ltd offers a full range of electrical services to suit your needs – from moving a light switch to complete house rewires.</p>
+                            <p>In addition to providing fully qualified, competent electricians in and around London, the company also runs an electrical wholesale shop.</p>
+                          </div>
+                          <div class="block__button">
+                            <a href="#" class="">Read More</a>
+                          </div>
+                        </div>
+                        <div class="block__image">
+                          <img src="@img/electrical-installation.jpg" alt="Electrical installation">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs__body">
+                      <div class="tabs__main">
+                        <div class="block">
+                          <div class="block__subtitle">
+                            <img src="@img/icons/helmet.svg" alt="Icon">
+                            Electrical installation
+                          </div>
+                          <div class="block__title">Residential</div>
+                          <div class="block__description">
+                            <p>Electrical & Maintenance Services Ltd offers a full range of electrical services to suit your needs – from moving a light switch to complete house rewires.</p>
+                            <p>In addition to providing fully qualified, competent electricians in and around London, the company also runs an electrical wholesale shop.</p>
+                          </div>
+                          <div class="block__button">
+                            <a href="#" class="">Read More</a>
+                          </div>
+                        </div>
+                        <div class="block__image">
+                          <img src="@img/fiber-cable-change.jpg" alt="Electrical installation">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs__body">
+                      <div class="tabs__main">
+                        <div class="block">
+                          <div class="block__subtitle">
+                            <img src="@img/icons/town-orange.svg" alt="Icon">
+                            Electrical installation
+                          </div>
+                          <div class="block__title">Industrial</div>
+                          <div class="block__description">
+                            <p>Electrical & Maintenance Services Ltd offers a full range of electrical services to suit your needs – from moving a light switch to complete house rewires.</p>
+                            <p>In addition to providing fully qualified, competent electricians in and around London, the company also runs an electrical wholesale shop.</p>
+                          </div>
+                          <div class="block__button">
+                            <a href="#" class="">Read More</a>
+                          </div>
+                        </div>
+                        <div class="block__image">
+                          <img src="@img/industry-machine-issue.jpg" alt="Electrical installation">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
         </section>
         <section class="our-services">
@@ -427,7 +500,12 @@
               <div class="subscribe__title">Subscribe Our Newsletter</div>
               <div class="subscribe__description">Stay in touch with us to get latest news. We are here to fit the needs of your electrical services for your dream building.</div>
             </div>
-            <div class="subscribe__form"></div>
+            <div class="subscribe__form">
+              <form action="./components/sendmail/sendmail.php" method="POST" data-ajax>
+                <input data-error="Incorrect email address entered" data-required="email" type="text" name="form[]" placeholder="Enter your email address">
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
           </div>
         </section>
 			</main>
