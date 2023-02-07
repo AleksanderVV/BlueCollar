@@ -109,7 +109,7 @@ Connecting Swiper and new sliders in files js/files/sliders.js
 Documentation: https://swiperjs.com/
 Snippet(HTML): swiper
 */
-// import "./files/sliders.js";
+import "./files/sliders.js";
 
 //  =========== Page scroll modules  =========== 
 

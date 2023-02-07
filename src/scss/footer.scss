@@ -11,7 +11,14 @@
         justify-content: space-between;
         padding-bottom: 28px;
         border-bottom: 1px solid #4B557D;
+        @media (max-width:$pc){
+          flex-direction: column;
+          gap: 40px;
+        }
         &__logo {
+          @media (max-width:$pc){
+            text-align: center; 
+          }
           a {
             img {
             }
@@ -74,14 +81,27 @@
         padding-top: 40px;
         padding-bottom: 2px;
         border-bottom: 1px solid #4B557D;
+        @media (max-width:$pc){
+            flex-direction: column;
+            gap: 80px;
+        }
         .footer__social {
           position: relative;
           max-width: 385px;
+          @media (max-width:$pc){
+            max-width: 100%;
+          }
           .footer__nav {
           }
           .footer__description {
             margin-top: 70px;
             margin-bottom: 52px;
+            @media (max-width:$pc){
+              margin: 0 auto;
+              margin-top: 20px;
+              margin-bottom: 32px;
+              width: 70%; 
+            }
           }
         }
         .footer__social::after {
@@ -96,6 +116,9 @@
         .footer__icons {
           display: flex;
           gap: 15px;
+          @media (max-width:$pc){
+            justify-content: center; 
+          }
           .icon {
             position: relative;
             height: 60px;
@@ -112,6 +135,9 @@
         .footer__nav {
           max-width: 755px;
           width: 100%;
+          @media (max-width:$pc){
+            margin: 0 auto;
+          }
           nav {
             display: flex;
             justify-content: space-between;

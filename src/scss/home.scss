@@ -39,6 +39,11 @@
   }
 
   &__image {
+    img {
+      @media (max-width:$pc){
+        max-width: 380px; 
+      }
+    }
   }
 
   &__main {
@@ -210,6 +215,9 @@
     display: flex;
     gap:30px;
     flex-wrap: wrap;
+    @media (max-width:$pc){
+      justify-content: center;
+    }
   }
 
   &__card {
@@ -251,10 +259,20 @@
     max-width: 1440px;
     display: flex;
     gap: 70px;
+    @media (max-width:$pc){
+      padding-top: 20px;
+      padding-bottom: 20px; 
+    }
   }
 
   &__advantages {
     position: relative;
+    @media (max-width:$pc){
+      width: 50%; 
+      img {
+        width: 100%;
+      }
+    }
   }
 
   &__items {
@@ -269,6 +287,13 @@
     opacity: 0.86;
     width: 77.8%;
     height: 67%;
+    @media (max-width:$pc){
+      padding: 80px 20px;
+      top: 200px;
+      left: 2%;
+      width: 96%;
+      height: 67%;
+    }
   }
 
   &__item {
@@ -369,6 +394,10 @@
 .gallery-cards {
   display: flex;
   gap: 30px;
+  @media (max-width:$pc){
+    flex-wrap: wrap;
+    justify-content: center; 
+  }
   &__card {
     background-color: $whiteColor;
     padding: 21px;
@@ -391,12 +420,212 @@
 }
 
 
-//====================================================================================================
+//===AboutUs=================================================================================================
+
+.about-us {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  &__container {
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+  }
+
+  &__testimonial-and-question {
+    max-width: 600px;
+    @media (max-width:$pc){
+      max-width: 470px; 
+    }
+  }
+
+  &__meet-us {
+    
+  }
+
+  &__clients {
+    text-align: center;
+  }
+}
+.testimonial {
+
+  &__main {
+    margin-bottom: 57px;
+    .block__title {
+      margin-bottom: 40px;
+    }
+    .block__main {
+      border: 1px solid #ddd;
+      padding: 41px;
+    }
+  }
+}
+
+.swiper-slide {
+  max-width: 591px;
+}
+.slide {
+
+  &__customer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 28px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  &__img {
+  }
+
+  &__info {
+    
+  }
+
+  &__name {
+    font-family: 'Mulish';
+    font-size: 22px;
+    line-height: 31px;
+  }
+
+  &__city {
+    color: $greyText;
+  }
+
+  &__description {
+    color: $greyText;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 23px;
+    span {
+      color: $mainColor;
+    }
+  }
+}
+.slider {
+
+  &__buttons {
+    display: flex;
+    gap: 21px;
+    p {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    p:first-child {
+      background: $greyColor url('@img/icons/arrow-left.svg') no-repeat center;
+    }
+    p:last-child {
+      background: $greyColor url('@img/icons/arrow-right.svg') no-repeat center;
+    }
+  }
+}
+.question {
+  &__main {
+    background-color: $orangeColor;
+    padding: 50px 40px;
+    .block__title {
+      font-family: 'Mulish';
+      font-size: 25px;
+      line-height: 32px;
+    }
+    .block__description {
+      color: $mainColor;
+      max-width: 490px;
+    }
+    .block__phone {
+      position: relative;
+      color: $whiteColor;
+      font-family: 'Mulish';
+      font-size: 30px;
+      line-height: 45px;
+      padding-left: 70px;
+      &::before {
+        position: absolute;
+        content: '';
+        background: url('@img/icons/phone.svg') no-repeat center;
+        top: 0;
+        left: 0;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: $whiteColor;
+      }
+    }
+  }
+}
+.meet-us {
+  &__main {
+    @media (max-width:$pc){
+      .block__title {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+.appointment-form {
+  width: 564px;
+  text-align: center;
+  background-color: $greyColor;
+  padding: 40px 70px;
+  @media (max-width:$pc){
+    width: 470px;
+    padding: 40px 40px; 
+  }
+  input,
+  textarea,
+  button {
+    width: 100%;
+  }
+  input {
+    height: 65px;
+    padding-left: 45px;
+    margin-bottom: 25px;
+    &::placeholder {
+      color: $mainColor;
+    }
+  }
+  &__name {
+  }
+
+  &__mail {
+  }
+
+  &__phone {
+  }
+
+  &__date {
+  }
+
+  &__description {
+    margin-bottom: 35px;
+    textarea {
+      padding-top: 19px;
+      padding-left: 37px;
+      &::placeholder {
+        color: $mainColor;
+      }
+    }
+  }
+  button {
+    background-color: $orangeColor;
+    height: 68px;
+  }
+}
+.clients {
+
+  &__main {
+    .block__main {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
 
 
-
-
-//====================================================================================================
+//===Price=================================================================================================
 
 .price {
   background-color: $greyColor;
@@ -415,8 +644,14 @@
     .block__main {
       display: flex;
       gap: 95px;
+      @media (max-width:$pc){
+          gap: 65px;
+      }
       .block__title {
         flex: 1 0 43%;
+        @media (max-width:$pc){
+          flex: 1 0 48%;
+        }
       }
     }
   }
@@ -424,12 +659,18 @@
   &__cards {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
   }
 
   &__card {
     background-color: $whiteColor;
     padding: 40px 40px 50px 40px;
+    width: 32%;
+    @media (max-width:$pc){
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 40px 20px 50px 20px;
+    }
   }
 
   &__advantages {
@@ -469,10 +710,14 @@
   margin-bottom: 62px;
   &__offer {
     display: flex;
-    gap: 43px;
+    justify-content: space-between;
+    //gap: 43px;
     padding-bottom: 38px;
     margin-bottom: 29px;
     border-bottom: 1px solid $greyColor;
+    // @media (max-width:$pc){
+    //     gap: 7px;
+    // }
   }
 
   &__plan {
@@ -536,6 +781,9 @@
     a {
       padding: 19px 106px;
       display: block;
+      @media (max-width:$pc){
+        padding: 20px 80px;
+      }
     }
     &:hover {
       background: rgba(208, 153, 13);
@@ -544,7 +792,7 @@
 }
 
 
-//====================================================================================================
+//===StayUpdates=================================================================================================
 
 .stay-updated {
   padding-top: 150px;
@@ -563,8 +811,6 @@
 .news-cards {
   display: flex;
   gap: 40px;
-  &_card {
-  }
 }
 .news-card {
   text-align: left;
@@ -572,6 +818,11 @@
   &__image {
     position: relative;
     margin-bottom: 50px;
+    > img {
+      @media (max-width:$pc){
+        width: 100%; 
+    }
+    }
   }
 
   &__image-title {
@@ -637,7 +888,7 @@
 }
 
 
-//====================================================================================================
+//===Subscribe=================================================================================================
 
 .subscribe {
   background-color: $orangeColor;
@@ -693,12 +944,5 @@
     }
   }
 }
-
-
-//====================================================================================================
-
-
-//====================================================================================================
-
 
 //====================================================================================================

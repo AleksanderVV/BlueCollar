@@ -5,7 +5,8 @@
   &__container {
     display: flex;
     justify-content: space-between;
-    padding: 21px 0;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
   &__icons {
     display: flex;
@@ -102,11 +103,13 @@
   }
 }
 
+
   .header-main {
     background: no-repeat center / cover url("@img/header-main-image.jpg");
     color: $whiteColor;
     &__container {
-      padding: 270px 0px 230px 0px;
+      padding-top: 270px;
+      padding-bottom: 230px;
       .header-main__description {
         line-height: 27px;
         background: rgba(255, 255, 255, 0.2);
