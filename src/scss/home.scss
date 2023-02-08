@@ -44,6 +44,9 @@
         max-width: 380px; 
       }
     }
+    @media (max-width:$tablet){
+      display: none;
+    }
   }
 
   &__main {
@@ -140,9 +143,6 @@
         }
       }
   
-      &__content {
-      }
-  
       &__main {
         display: flex;
         gap: 120px;
@@ -150,13 +150,11 @@
         z-index: 1;
         padding: 60px;
         background-color: $whiteColor;
+        @media (max-width:$tablet){
+          gap: 20px;
+        }
         .block {
           text-align: left;
-          &__subtitle {
-          }
-      
-          &__title {
-          }
       
           &__description {
             color: $greyText;
@@ -178,6 +176,10 @@
             max-width: 416px;
             height: 366px;
             background-size: contain;
+            @media (max-width:$tablet){
+              max-width: 300px;
+              height: auto;
+            }
           }
         }
       }
@@ -263,6 +265,9 @@
       padding-top: 20px;
       padding-bottom: 20px; 
     }
+    @media (max-width:$tablet){
+      flex-direction: column;
+    }
   }
 
   &__advantages {
@@ -272,6 +277,9 @@
       img {
         width: 100%;
       }
+    }
+    @media (max-width:$tablet){
+      width: 100%;
     }
   }
 
@@ -292,6 +300,13 @@
       top: 200px;
       left: 2%;
       width: 96%;
+      height: 67%;
+    }
+    @media (max-width:$tablet){
+      padding: 140px 80px;
+      top: 200px;
+      left: 9%;
+      width: 80%;
       height: 67%;
     }
   }
@@ -323,6 +338,9 @@
 
   &__main {
     padding-top: 93px;
+    @media (max-width:$tablet){
+      padding-top: 40px;
+    }
     .block__title {
       max-width: 510px;
     }
@@ -432,6 +450,10 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 90px;
+    @media (max-width:$tablet){
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__testimonial-and-question {
@@ -439,10 +461,9 @@
     @media (max-width:$pc){
       max-width: 470px; 
     }
-  }
-
-  &__meet-us {
-    
+    @media (max-width:$tablet){
+      max-width: 650px;
+    }
   }
 
   &__clients {
@@ -563,6 +584,9 @@
         margin-bottom: 40px;
       }
     }
+    @media (max-width:$tablet){
+      margin-top: 70px;
+    }
   }
 }
 .appointment-form {
@@ -573,6 +597,10 @@
   @media (max-width:$pc){
     width: 470px;
     padding: 40px 40px; 
+  }
+  @media (max-width:$tablet){
+    width: 650px;
+    padding: 60px 60px; 
   }
   input,
   textarea,
@@ -586,17 +614,6 @@
     &::placeholder {
       color: $mainColor;
     }
-  }
-  &__name {
-  }
-
-  &__mail {
-  }
-
-  &__phone {
-  }
-
-  &__date {
   }
 
   &__description {
@@ -620,6 +637,13 @@
     .block__main {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
+      .client-name {
+        @media (max-width:$tablet){
+          width: 50%;
+          margin-top: 30px;
+        }
+      }
     }
   }
 }
@@ -647,6 +671,10 @@
       @media (max-width:$pc){
           gap: 65px;
       }
+      @media (max-width:$tablet){
+        flex-direction: column;
+        gap: 20px;
+      }
       .block__title {
         flex: 1 0 43%;
         @media (max-width:$pc){
@@ -659,6 +687,9 @@
   &__cards {
     display: flex;
     justify-content: space-between;
+    @media (max-width:$tablet){
+      flex-direction: column;
+    }
   }
 
   &__card {
@@ -670,6 +701,10 @@
       flex-direction: column;
       justify-content: space-between;
       padding: 40px 20px 50px 20px;
+    }
+    @media (max-width:$tablet){
+      width: 50%;
+      align-self: center;
     }
   }
 
@@ -811,6 +846,9 @@
 .news-cards {
   display: flex;
   gap: 40px;
+  @media (max-width:$tablet){
+    flex-direction: column;
+  }
 }
 .news-card {
   text-align: left;
@@ -836,6 +874,10 @@
     left: 0;
     right: 0;
     margin: auto;
+    @media (max-width:$tablet){
+      width: 100%;
+      max-width: 360px;
+    }
   }
 
   &__image-name {
@@ -894,9 +936,16 @@
   background-color: $orangeColor;
   padding-top: 140px;
   padding-bottom: 50px;
+  @media (max-width:$tablet){
+    padding-top: 70px;
+  }
   &__container {
     display: flex;
     justify-content: space-between;
+    @media (max-width:$tablet){
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__main {
