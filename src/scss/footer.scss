@@ -19,13 +19,6 @@
           @media (max-width:$pc){
             text-align: center; 
           }
-          a {
-            img {
-            }
-            &:hover {}
-            &:active {}
-            &:focus {}
-          }
         }
         &__content {
           display: flex;
@@ -159,6 +152,9 @@
               width: 1px;
               height: 223px;
               background-color: #4B557D;
+              @media (max-width:$mobile){
+                display: none; 
+              }
             }
             li {
               font-size: 17px;

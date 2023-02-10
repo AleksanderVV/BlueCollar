@@ -1,4 +1,10 @@
 //====================================================================================================
+.header {
+  @media (max-width:$mobile){
+    display: flex;
+    flex-direction: column; 
+  }
+}
 
 .header-social {
   background-color: $greyColor;
@@ -16,6 +22,9 @@
 .header-contacts {
   background-color: $whiteColor;
   padding: 40px 0px;
+  @media (max-width:$mobile){
+    order: 3; 
+  }
   &__container {
     display: flex;
     justify-content: space-between;
@@ -35,6 +44,9 @@
   &__content {
     display: flex;
     gap: 65px;
+    @media (max-width:$mobile){
+      flex-direction: column; 
+    }
     a {
       transition: all 0.3s ease 0s;
       &:hover {
@@ -81,29 +93,48 @@
   justify-content: space-between;
   padding: 10px 10px 10px 20px;
   background-color: $orangeColor;
+  @media (max-width:$mobile){
+    background-color: $greyColor; 
+    flex-direction: column; 
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }
+
 }
 .menu {
-  max-width: 645px;
+  // 'max-width: 645px;'
   width: 100%;
   line-height: 65px;
   @media (max-width:$tablet){
-    max-width: 460px;
+    max-width: 100%;
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
   }
   &__list {
     display: flex;
+    gap: 50px;
     justify-content: space-around;
     font-size: 19px;
+    margin-left: 40px;
+    @media (max-width:$tablet){
+      gap: 20px;
+      margin-left: 0;
+    }
   }
   &__button {
-    padding: 19px 42px;
+    padding: 1px 42px;
     background-color: $mainColor;
     color: $greyColor;
     transition: all 0.3s ease 0s;
+    @media (max-width:$mobile){
+      max-width: 300px; 
+      margin: 0 auto;
+    }
     &:hover {
       background-color: rgb(3, 3, 54);
     }
-    &:active {}
-    &:focus {}
   }
   &__link {
     transition: all 0.3s ease;
@@ -111,8 +142,17 @@
       color: $whiteColor;
     }
   }
+  &__icon {
+    @media (max-width:$mobile){
+      margin-left: auto; 
+    }
+  }
 }
-
+.header__navigation {
+  @media (max-width:$mobile){
+    order: 2; 
+  }
+}
 
   .header-main {
     background: url("@img/header-main-image.jpg") center / cover no-repeat;
@@ -123,6 +163,9 @@
     color: $whiteColor;
     @media (max-width:$tablet){
       background-position: 80% center;
+    }
+    @media (max-width:$mobile){
+       order: 4; 
     }
     &__container {
       padding-top: 270px;
@@ -144,6 +187,9 @@
         text-transform: capitalize;
         max-width: 712px;
         margin-bottom: 29px;
+        @media (max-width:$mobile){
+          font-size: 38px; 
+        }
       }
       .view-services {
         display: inline-block;
@@ -196,10 +242,7 @@
 		.menu-open & {
 			span {
 				width: 0;
-			}
-			&::before,
-			&::after {
-			}
+      }
 			&::before {
 				top: calc(50% - rem(1));
 				transform: rotate(-45deg);
@@ -210,5 +253,50 @@
 			}
 		}
 	}
+}
+
+
+
+.menu__body {
+  @media (max-width:$mobile){
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    left: 0;
+    top: 50px;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    padding-top: 40px;
+    transition: all 0.3s ease;
+  }
+}
+.menu__list {
+  @media (max-width:$mobile){
+    flex-direction: column;
+    gap: 0; 
+  }
+}
+.menu-open .menu__body {
+  opacity: 1;
+  visibility:visible;
+  background-color: $mainColor;
+  height: 86vh;
+  a:not(.menu__button) {
+    display: block;
+    color: $whiteColor;
+    font-size: 32px;
+    line-height: 80px;
+    &:hover {
+      background-color: $orangeColor;
+    }
+  }
+  .menu__button {
+    font-size: 21px;
+    max-width: 100%;
+    background-color: $orangeColor;
+    padding-bottom: 0;
+    margin-bottom: 40px;
+  }
 }
 
