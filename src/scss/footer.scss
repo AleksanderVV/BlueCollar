@@ -139,10 +139,17 @@
             display: flex;
             justify-content: space-between;
             line-height: 27px;
+            @media (max-width:$mobileSmall){
+              flex-direction: column; 
+              gap: 50px;
+            }
             ul {
               position: relative;
               font-size: 20px;
               color: $orangeColor;
+              @media (max-width:$mobileSmall){
+                text-align: center; 
+              }
             }
             .quick-links::after {
               content: "";

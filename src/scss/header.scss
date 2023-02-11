@@ -13,10 +13,16 @@
     justify-content: space-between;
     padding-top: 21px;
     padding-bottom: 21px;
+    @media (max-width:$mobileSmall){
+      padding-bottom: 0; 
+    }
   }
   &__icons {
     display: flex;
     gap: 20px;
+    @media (max-width:$mobileSmall){
+      gap: 10px; 
+    }
   }
 }
 .header-contacts {
@@ -170,6 +176,10 @@
     &__container {
       padding-top: 270px;
       padding-bottom: 230px;
+      @media (max-width:$mobileSmall){
+        padding-top: 150px;
+        padding-bottom: 150px; 
+      }
       .header-main__description {
         line-height: 27px;
         background: rgba(255, 255, 255, 0.2);
