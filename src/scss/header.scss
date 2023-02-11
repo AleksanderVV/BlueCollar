@@ -165,7 +165,7 @@
       background-position: 80% center;
     }
     @media (max-width:$mobile){
-       order: 4; 
+      order: 4; 
     }
     &__container {
       padding-top: 270px;
@@ -189,6 +189,10 @@
         margin-bottom: 29px;
         @media (max-width:$mobile){
           font-size: 38px; 
+        }
+        @media (max-width:$mobileSmall){
+          font-size: 27px;
+          line-height: 36px; 
         }
       }
       .view-services {

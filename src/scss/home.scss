@@ -17,6 +17,10 @@
     @media (max-width:$mobile){
         font-size: 32px; 
     }
+    @media (max-width:$mobileSmall){
+      font-size: 24px; 
+      line-height: 32px;
+    }
   }
 
   &__description {
@@ -54,12 +58,18 @@
 
   &__main {
     padding-top: 21px;
+    .block__description {
+      margin-bottom: 50px;
+    }
   }
 }
 
 .block-experience {
   display: flex;
   gap: 40px;
+  @media (max-width:$mobileSmall){
+    flex-direction: column; 
+  }
   &__year {
     font-family: 'Mulish';
     background-color: $greyColor;
@@ -89,6 +99,9 @@
     margin-bottom: 10px;
     list-style-type: "-";
     padding-left: 5px;
+    @media (max-width:$mobileSmall){
+      font-size: 16px; 
+    }
   }
 }
 
@@ -116,11 +129,10 @@
         gap: 30px;
         justify-content: center;
         margin-bottom: 40px;
-        ._tab-active {
-          background-color: $whiteColor;
-        }
       }
-  
+      ._tab-active {
+        background-color: $whiteColor;
+      }
       &__title {
         position: relative;
         padding: 19px 41px 19px 85px;
@@ -156,6 +168,9 @@
         @media (max-width:$tablet){
           gap: 20px;
         }
+        @media (max-width:$mobile){
+          flex-direction: column; 
+        }
         .block {
           text-align: left;
       
@@ -183,11 +198,40 @@
               max-width: 300px;
               height: auto;
             }
+            @media (max-width:$mobile){
+              margin-top: 30px;
+              max-width: 100%; 
+            }
           }
         }
       }
     }
   }
+}
+
+._tab-spoller .tabs__content {
+  position: relative;
+  ._tab-active {
+    background-color: $orangeColor;
+  }
+}
+._tab-spoller .tabs__content .tabs__title {
+  position: absolute;
+  z-index: 5;
+  transform: rotate(-90deg);
+
+}
+._tab-spoller .tabs__content .tabs__title_commercial {
+  top: 83px;
+  right: -84px;
+}
+._tab-spoller .tabs__content .tabs__title_residential {
+  top: 307px;
+  right: -80px;
+}
+._tab-spoller .tabs__content .tabs__title_industrial {
+  top: 520px;
+  right: -73px;
 }
 
 
@@ -564,6 +608,9 @@
   &__main {
     background-color: $orangeColor;
     padding: 50px 40px;
+    @media (max-width:$mobileSmall){
+      padding: 50px 20px;  
+    }
     .block__title {
       font-family: 'Mulish';
       font-size: 25px;
@@ -580,6 +627,10 @@
       font-size: 30px;
       line-height: 45px;
       padding-left: 70px;
+      @media (max-width:$mobileSmall){
+        font-size: 18px; 
+        padding-left: 50px;
+      }
       &::before {
         position: absolute;
         content: '';
@@ -590,6 +641,12 @@
         width: 50px;
         border-radius: 50%;
         background-color: $whiteColor;
+        @media (max-width:$mobileSmall){
+          height: 35px;
+          width: 35px;
+          top: 7px;
+          left: 11px;
+        }
       }
     }
   }
